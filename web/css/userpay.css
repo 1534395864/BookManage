@@ -1,0 +1,198 @@
+.logo h5 {
+	font-size: 35px;
+	margin-top: 7%;
+	margin-left: 2%;
+}
+
+.name {
+	background: #01AAED;
+	height: 70px;
+	width: 41%;
+	border-radius: 2px;
+	margin-top: -2%;
+	margin-bottom: 2%;
+}
+
+.name label {
+	font-size: 26px;
+	color: #F8F8F8;
+	line-height: 70px;
+	margin: 1%;
+}
+
+.choose {
+	width: 100px;
+	border: 2px solid #CCCCCC;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 20px;
+	line-height: 48px;
+	color: #999;
+	cursor: pointer;
+	margin-left: 2%;
+}
+
+.choose:hover {
+	border-color: #27b0d6;
+}
+
+.pay {
+	width: 100px;
+	border: 2px solid #CCCCCC;
+	line-height: 48px;
+	height: 48px;
+	margin-left: 2%;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.pay img {
+	float: left;
+	width: 60%;
+	height: 60%;
+	margin-left: -5%;
+	margin-top: 13%;
+}
+
+.pay span {
+	float: left;
+	margin-left: -5%;
+}
+
+.pay:hover {
+	border-color: #27b0d6;
+}
+
+.layui-row p {
+	text-align: center;
+	font-size: 17px;
+	line-height: 48px;
+}
+
+.br {
+	margin-top: 2%;
+	margin-left: 8.5%;
+	margin-bottom: 2%;
+}
+
+.paybox {
+	margin-left: 12%;
+	margin-top: 4%;
+}
+
+#paynumber {
+	width: 84.5%;
+	height: 25px;
+	margin-left: 0px;
+	border: none;
+}
+
+.rechnum {
+	color: red;
+	font-size: 45px;
+}
+
+#gopay {
+	margin-left: 20%;
+	margin-bottom: 3%;
+	margin-top: 2%;
+}
+
+#gopay p {
+	color: red;
+	font-size: 16px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+@media only screen and (max-width: 640px) {
+	.logo h5 {
+		font-size: 22px;
+		margin-top: 8%;
+		margin-left: 10%;
+	}
+	.choose {
+		width: 55px;
+		border: 2px solid #CCCCCC;
+		text-align: center;
+		border-radius: 3px;
+		font-size: 15px;
+		line-height: 33px;
+		color: #999;
+		cursor: pointer;
+		margin-left: 2%;
+	}
+	.choose:hover {
+		border-color: #27b0d6;
+		background: transparent url(../img/success1.png) no-repeat right bottom;
+	}
+	.layui-row p {
+		text-align: center;
+		font-size: 17px;
+		line-height: 48px;
+	}
+	.br {
+		margin-top: 2%;
+		margin-left: 34%;
+	}
+	.paybox {
+		margin-left: 2%;
+		margin-top: 4%;
+	}
+	#paynumber {
+		width: 68%;
+		height: 15px;
+		font-size: 13px;
+		margin-left: -10%;
+		border: none;
+	}
+	.rechnum {
+		font-size: 30px;
+	}
+	.pay {
+		width: 65px;
+		border: 2px solid #CCCCCC;
+		height: 33px;
+		margin-left: 2%;
+	}
+	.pay img {
+		float: left;
+		width: 60%;
+		height: 60%;
+		margin-left: -10%;
+		margin-top: 5%;
+	}
+	.pay span {
+		float: left;
+		margin-left: 40%;
+		margin-top: -20%;
+		line-height: 100%;
+		font-size: 10px;
+	}
+	.name {
+		background: #01AAED;
+		height: 40px;
+		width: 100%;
+		border-radius: 2px;
+		margin-top: -2%;
+		margin-bottom: 5%;
+	}
+	.name label {
+		font-size: 13px;
+		color: #F8F8F8;
+		line-height: 40px;
+		margin: 1%;
+	}
+	#gopay {
+		margin-left: 35%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+}

@@ -1,0 +1,95 @@
+.logo p {
+	font-size: 35px;
+	margin-top: 8%;
+	margin-left: 10%;
+}
+
+.bread {
+	margin: 3%;
+}
+
+.img {
+	margin-left: 25%;
+	margin-top: 2%;
+	width: 15%;
+	height: 200px;
+	float: left;
+}
+
+img {
+	height: 100%;
+	width: 100%;
+}
+
+.info {
+	margin-left: 2%;
+	margin-top: 1%;
+	font-size: 25px;
+	width: 30%;
+	float: left;
+}
+
+.layui-row {
+	margin: 2%;
+}
+
+#text {
+	font-size: 16px;
+}
+
+#footer {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin-top: 33%;
+}
+
+button {
+	margin-top: 3%;
+}
+
+#tips{
+	color:#999999;
+	font-size:15px;
+	margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 640px) {
+	.logo p {
+		font-size: 22px;
+		margin-top: 8%;
+		margin-left: 10%;
+	}
+	.img {
+		margin-left: 10%;
+		margin-top: 2%;
+		border: 1px solid red;
+		width: 35%;
+		height: 150px;
+		float: left;
+	}
+	img {
+		height: 100%;
+		width: 100%;
+	}
+	.info {
+		border: 1px solid red;
+		margin-left: 2%;
+		margin-top: 1%;
+		font-size: 13px;
+		width: 40%;
+		float: left;
+	}
+	.layui-row {
+		margin: 2%;
+	}
+	#text {
+		font-size: 9px;
+	}
+	#footer {
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		margin-top: 110%;
+	}
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="layui/css/layui.css" />
+	</head>
+	<style type="text/css">
+		p {
+			margin: 3%;
+		}
+		
+		#pay {
+			margin-left: 35%;
+		}
+		
+		h5 {
+			font-size: 15px;
+			margin-top: -8%;
+		}
+		
+		h6 {
+			font-size: 15px;
+			margin-top: -40%;
+		}
+	</style>
+
+	<body>
+		<div>
+			<p>会员权益:</p>
+			<div style="margin-left: 20%;">
+				<p>1.海量图书任您选择</p>
+				<p>2.图书下载次数不限,并且享受更快的下载速度</p>
+				<p>3.付费图书享受折扣优惠(8折)</p>
+				<p>4.一次购买,终生享受会员权益</p>
+			</div>
+		</div>
+		<button class="layui-btn layui-btn-lg layui-btn-normal" id="pay">
+		<h5>立即购买</h5>
+		<h6>￥300</h6>
+	</button>
+		<script type="text/javascript" src="layui/layui.js"></script>
+		<script type="text/javascript" src="jQuery/jquery3.3.1.js"></script>
+		<script>
+			layui.use(['jquery', 'layer'], function() {
+				var $ = layui.jquery,
+					layer = layui.layer;
+				localStorage.setItem('flag', false);
+				$("#pay").on('click', function() {
+					layer.confirm('确认购买VIP吗', function(index,layero){
+						$.ajax({
+							type: 'POST',
+							url: './UserServlet?method=vip',
+							async: false,
+							success: function(data) {
+								var json = JSON.parse(data);
+								var result = json.result;
+								if(result == 'NOTENOUGH') {
+									layer.alert('余额不足,请充值', function(index) {
+										top.location.href = "./usepay.jsp";
+										localStorage.setItem('flag', false);
+									});
+								} else if(result == 'YES') {
+									layer.alert('购买成功', function(index) {
+										top.location.href = "./user.jsp"
+									});
+								} else {
+									layer.alert('未知错误,请联系管理员', function(index) {
+										top.location.href = "./user.jsp"
+									});
+								}
+							}
+						});
+						  layer.close(index);
+						});
+				});
+			});
+		</script>
+	</body>
+
+</html>

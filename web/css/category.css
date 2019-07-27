@@ -1,0 +1,94 @@
+.nav {
+	margin-top: 0.3%;
+}
+
+.nav li:nth-child(-n+7) {
+	margin-left: 4%;
+}
+
+.nav li:nth-child(+7) {
+	margin-left: 9%;
+}
+
+.nav li:first-child {
+	margin-left: 15%;
+}
+
+.bookinfo {
+	width: 90%;
+	height: 1000px;
+	border: 1px solid red;
+	margin-top: 2%;
+	border: 1px solid red;
+	margin-top: 2%;
+	margin-left: 5%;
+}
+
+.bookinfo li {
+	float: left;
+	margin: 2%;
+	width: 20%;
+	height: 280px;
+}
+
+.no {
+	pointer-events: none;
+	cursor: not-allowed;
+	opacity: 0.6;
+}
+
+.indexpage {
+	margin-top: 3%;
+}
+
+.footer {
+	line-height: 50px;
+	text-align: center;
+	margin-top: 2%;
+}
+
+.bookinfo li>a>p {
+	font-size: 15px;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.bookinfo li>span {
+	line-height: 20px;
+	color: #999;
+}
+
+.bookinfo li>a>img {
+	width: 60%;
+	height: 180px;
+}
+
+ul.pagination {
+	font-size: 22px;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	margin-left: 35%;
+}
+
+ul.pagination li {
+	display: inline;
+}
+
+ul.pagination li a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+ul.pagination li a.active {
+	background-color: #4CAF50;
+	color: white;
+	border-radius: 5px;
+}
+
+ul.pagination li a:hover:not (.active) {
+	background-color: #ddd;
+}

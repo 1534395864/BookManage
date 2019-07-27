@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE server>
+<c3p0-config>
+	<default-config>
+ 		<property name="user">cxkj_users</property>
+		<property name="password">nqsb</property>
+		<property name="jdbcUrl">jdbc:mysql://118.89.176.51:3306/bookmanage?characterEncoding=utf-8&amp;autoReconnect=true&amp;useSSL=true</property>
+		<property name="maxIdleTime">60</property> 
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+	</default-config>
+</c3p0-config>
+   

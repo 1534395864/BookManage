@@ -1,0 +1,156 @@
+#bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+#bg canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.logo p {
+	font-size: 35px;
+	line-height: 108px;
+	color: #FBFBFB;
+}
+
+.logo span {
+	margin: 1%;
+	margin-right: 2.5%;
+}
+
+
+/*注册表单*/
+
+.form-item {
+	/*border: 2px solid red;*/
+	margin-top: 2.5%;
+	height: 50px;
+	line-height: 50px;
+	color: #F8F8F8;
+}
+
+.form-item p {
+	font-size: 23px;
+	text-align: right;
+}
+
+.form-item i {
+	font-size: 30px;
+}
+
+.form-item input {
+	margin-left: -5%;
+	height: 50px;
+	font-size: 20px;
+	border-radius: 6px 6px 6px 6px;
+}
+
+.form-sex {
+	margin-top: 2%;
+	color: #F8F8F8;
+	font-size: 23px;
+	margin-left: 27%;
+}
+
+.form-rules {
+	margin-top: 1%;
+	height: 50px;
+	color: #F8F8F8;
+}
+
+.agree-label {
+	display: inline-block;
+	font-size: 15px;
+}
+
+.agree-label a {
+	color: #1E9FFF;
+}
+
+.agree-label i {
+	display: inline-block;
+	width: 21px;
+	height: 22px;
+	margin-bottom: -4px;
+	margin-right: 6px;
+	background: url(../img/s.jpg) no-repeat;
+}
+
+.agree-label i.cus-checked {
+	background-position: 0 -22px;
+}
+
+@media only screen and (max-width:500px) {
+	#bg canvas {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 120%;
+		height: 170%;
+	}
+	h3 {
+		font-size: 1em;
+	}
+	.logo p {
+		font-size: 25px;
+		line-height: 55px;
+		color: #FBFBFB;
+	}
+	/* start*/
+	.form-item {
+		/*border: 2px solid red;*/
+		margin-top: 3%;
+		height: 50px;
+		line-height: 45px;
+		color: #F8F8F8;
+	}
+	.form-item p {
+		font-size: 13px;
+	}
+	.form-item i {
+		font-size: 23px;
+	}
+	.form-item input {
+		margin-left: -7%;
+		height: 40px;
+		font-size: 13px;
+		border-radius: 5px 5px 5px 5px;
+	}
+	.form-sex {
+		margin-top: 2%;
+		color: #F8F8F8;
+		font-size: 13px;
+		margin-left: 3%;
+	}
+	.form-rules {
+		margin-top: 1%;
+		height: 50px;
+		color: #F8F8F8;
+	}
+	.agree-label {
+		display: inline-block;
+		font-size: 15px;
+	}
+	.agree-label a {
+		color: #1E9FFF;
+	}
+	.agree-label i {
+		display: inline-block;
+		width: 21px;
+		height: 22px;
+		margin-bottom: -4px;
+		margin-right: 6px;
+		background: url(../img/s.jpg) no-repeat;
+	}
+	.agree-label i.cus-checked {
+		background-position: 0 -22px;
+	}
+}

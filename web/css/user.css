@@ -1,0 +1,75 @@
+.logo p {
+	font-size: 35px;
+	margin-top: 8%;
+	margin-left: 10%;
+}
+
+.bread {
+	margin: 3%;
+}
+
+.info {
+	margin-top: 3%;
+	font-size: 15px;
+	margin-left: 4%;
+}
+
+.record {
+	width: 50%;
+	margin-left: 20%;
+	margin-top: 2%;
+	font-size: 15px;
+}
+
+.record p {
+	margin-bottom: 2%;
+}
+
+#laypage {
+	margin-left: 36%;
+	margin-top: 2%;
+}
+
+#vip {
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 640px) {
+	.logo p {
+		font-size: 22px;
+		margin-top: 8%;
+		margin-left: 10%;
+	}
+	.bread ul {
+		list-style: none;
+	}
+	.bread li {
+		font-size: 13px;
+		width: 60px;
+		height: 25px;
+		line-height: 25px;
+		float: left;
+		background: #6cf;
+		text-align: center;
+		background: url(../img/bread.png) no-repeat 100% 0;
+		position: relative;
+	}
+	.info {
+		margin-top: 3%;
+		font-size: 12px;
+		margin-left: 4%;
+	}
+	.record {
+		width: 60%;
+		margin-left: 20%;
+		margin-top: 2%;
+		font-size: 11px;
+	}
+	.record p {
+		margin-bottom: 2%;
+	}
+	#laypage {
+		margin-left: 25%;
+		margin-top: 2%;
+	}
+}
